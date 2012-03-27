@@ -34,4 +34,16 @@ class SiriProxy::Plugin::Asiri < SiriProxy::Plugin
     request_completed
   end
   
+  listen_for /ماهو اسمي / do
+    say "هاهو اسمك", spoken: "add_views = SiriAddViews.new
+    add_views.make_root(last_ref_id)
+    map_snippet = SiriMapItemSnippet.new
+    map_snippet.items << SiriMapItem.new
+    utterance = SiriAssistantUtteranceView.new("Testing map injection!")
+    add_views.views << utterance
+    add_views.views << CONTACTS"
+  
+    request_completed
+  end
+  
 end
